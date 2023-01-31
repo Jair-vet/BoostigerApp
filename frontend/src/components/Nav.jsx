@@ -10,8 +10,12 @@ export const Nav = () => {
                 <span className='text-primaryColor font-bold'>Tiger</span>
             </h1>
             <ul className="desktop-menu mt-3">
-                <li><a href="#courses" className='enlace'>Courses</a></li>
-                <li><a href="#header" className='enlace'>Header</a></li>
+                <li>
+                    <a href="#courses" className='enlace'><i className='fas fa-shopping-cart'></i> Cart</a>
+                </li>
+                <li>
+                    <a href="#header" className='enlace'><i className='fas fa-user'></i> Sign In</a>
+                </li>
             </ul>
 
             <div className="mobile-menu">
@@ -21,8 +25,8 @@ export const Nav = () => {
                 <div>
                 <div>
                     <ul>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#header">Header</a></li>    
+                        <li><a href="#courses" className='enlace'>Cart</a></li>
+                        <li><a href="#header" className='enlace'>Sign In</a></li>    
                     </ul>
                 </div>
                 </div>

@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
   return (
     <>
-        <footer class="py-12 bg-primaryColor scroll-none overscroll-none">
+        <footer class="py-12 bg-primaryColor">
             <div
                 class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 
                     md:flex-row md:space-y-0">
@@ -17,10 +17,6 @@ export const Footer = () => {
                     <a href="#download" class="footerEnlces font-mono">WhatsApp</a>
                     <a href="#faq" class="footerEnlces font-mono">About Us</a>
                 </div>
-                <div className='absolute'>
-                    <h2 className='md:mt-12 md:w-[500px] md:text-center mt-44'>Copyright &copy;BossTiger</h2>
-                </div>
-
             </div>
         </footer>
     </>

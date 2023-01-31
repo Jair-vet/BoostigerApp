@@ -1,3 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Custom Properties */
+:root {
+    --primary-color: #3195ff;
+    --secondary-color: #333;
+    --dark-color: #000;
+    --light-color: #f4f4f4;
+    --header-opacity: 0.7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(https://www.traversymedia.com/images/bg-pattern-1.png);
+    color: #fff;
+}
+main {
+    min-height: 100vh;
+}
+.navbar {
+    /* background-color: var(--primary-color); */
+    background-color: rgb(5, 5, 5);
+    height: 70px;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    position: fixed;
+    z-index: 10;
+    opacity: 0.8;
+}
+  
+.navbar img {
+    display: block;
+    width: 250px;
+    height: 60px;
+}
+  
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.navbar ul {
+    display: flex;
+}
+  
+.navbar ul a {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+}
+  
+.navbar ul a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+.enlace{
+    @apply text-xl uppercase font-bold font-mono
+}
+
+/* Footer */
+.footerEnlces {
+    @apply uppercase hover:text-[#333] hover:border-b-2 hover:border-b-[#333] border-b-2 border-b-[#3195ff]
+}
