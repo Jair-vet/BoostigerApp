@@ -13,6 +13,7 @@ module.exports = {
       lightColor: '#f4f4f4',
       greenBorder: '#1CB698',
       veryDarkBlue: 'hsl(229, 31%, 21%)',
+      yellowSpan: '#ceaa0d'
     },
     fontFamily: {
       sans: ['Barlow Semi Condensed', 'sans-serif'],
