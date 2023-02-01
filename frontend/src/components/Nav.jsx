@@ -4,12 +4,12 @@ export const Nav = () => {
   return (
     <>
         <nav className="navbar">
-        <div className="container">
+        <div className="flex md:justify-between sm:justify-around">
             {/* Logo */}
             <h1 className='text-4xl text-lightColor font-mono font-normal mt-2'>Boos
                 <span className='text-primaryColor font-bold'>Tiger</span>
             </h1>
-            <ul className="desktop-menu mt-3">
+            <ul className="mt-3">
                 <li>
                     <a href="#courses" className='enlace'><i className='fas fa-shopping-cart'></i> Cart</a>
                 </li>
