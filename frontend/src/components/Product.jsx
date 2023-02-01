@@ -1,16 +1,28 @@
 import React from 'react'
+import { ProductName } from './ProductName'
+import { Rating } from './Rating'
 
 export const Product = ({ product }) => {
   return (
     <>
-        <div /* className='my-3 p-3 rounded' */>
+        <div className='transition duration-500 hover:-translate-y-3'>
             <a href={`/product/${product._id}`}>
                 <img 
                     src={product.image} 
                     variant="top" 
-                    // className='object-cover rounded-md w-[100]'
-                    className='object-cover rounded-md w-full h-[200px] transition duration-500 hover:-translate-y-3'
+                    className='object-cover rounded-md w-full h-[200px]'
                 />
+                <div>
+                    <ProductName
+                        name={product.name}
+                    />
+                    
+                </div>
+                <div>
+                    <Rating 
+                        value={product.rating}
+                    />
+                </div>
             </a>
         </div>
     </>

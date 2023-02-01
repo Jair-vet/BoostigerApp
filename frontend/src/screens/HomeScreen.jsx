@@ -7,10 +7,10 @@ export const HomeScreen = () => {
     <div className='content'>
         <h1 className='text-center text-2xl uppercase font-mono'>Lastest <span>Products</span></h1>
         <div className='p-8 grid gap-5 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 grid-cols-2'>
-            {products.map((product, key) => (
+            {products.map((product) => (
                 <Product
                     product={product}
-                    key={key._id}
+                    key={product._id}
                 />
             ))}
         </div>
