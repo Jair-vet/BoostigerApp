@@ -5,7 +5,7 @@ export const Nav = () => {
   return (
     <>
         <nav className="navbar">
-        <div className="flex md:justify-between sm:justify-around">
+        <div className="flex md:justify-between nav-tool">
             {/* Logo */}
             <h1 className='text-4xl text-lightColor font-mono font-normal mt-2'>Boos
                 <span className='text-primaryColor font-bold'>Tiger</span>

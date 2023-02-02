@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import { ProductName } from './ProductName'
 import { Rating } from './Rating'
 
@@ -6,7 +8,7 @@ export const Product = ({ product }) => {
   return (
     <>
         <div className='transition duration-500 hover:-translate-y-3'>
-            <a href={`/product/${product._id}`}>
+            <Link to={`/product/${product._id}`}>
                 <img 
                     src={product.image} 
                     variant="top" 
@@ -23,7 +25,7 @@ export const Product = ({ product }) => {
                         value={product.rating}
                     />
                 </div>
-            </a>
+            </Link>
         </div>
     </>
   )
