@@ -6,12 +6,12 @@ export const Rating = ({ value }) => {
     <div className='text-end text-sm'>
         <span className='ml-1 text-yellowSpan '>
             <i className={
-                value >= 1 
-                ? 'fas fa-star' 
-                : value >= 0.5 
-                ? 'fas fa-start-half-alt' 
+                value >= 1
+                ? 'fas fa-star'
+                : value >= 0.5
+                ? 'fas fa-star-half-alt'
                 : 'far fa-star'
-                }
+            }
             ></i>
         </span>
         <span className='ml-1 text-yellowSpan'>
@@ -19,7 +19,7 @@ export const Rating = ({ value }) => {
                 value >= 2 
                 ? 'fas fa-star' 
                 : value >= 1.5 
-                ? 'fas fa-start-half-alt' 
+                ? 'fas fa-star-half-alt' 
                 : 'far fa-star'
                 }
             ></i>
@@ -29,7 +29,7 @@ export const Rating = ({ value }) => {
                 value >= 3 
                 ? 'fas fa-star' 
                 : value >= 2.5 
-                ? 'fas fa-start-half-alt' 
+                ? 'fas fa-star-half-alt' 
                 : 'far fa-star'
                 }
             ></i>
@@ -39,7 +39,7 @@ export const Rating = ({ value }) => {
                 value >= 4 
                 ? 'fas fa-star' 
                 : value >= 3.5 
-                ? 'fas fa-start-half-alt' 
+                ? 'fas fa-star-half-alt' 
                 : 'far fa-star'
                 }
             ></i>
@@ -49,7 +49,7 @@ export const Rating = ({ value }) => {
                 value >= 5 
                 ? 'fas fa-star' 
                 : value >= 4.5 
-                ? 'fas fa-start-half-alt' 
+                ? 'fas fa-star-half-alt' 
                 : 'far fa-star'
                 }
             ></i>
