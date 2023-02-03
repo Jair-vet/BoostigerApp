@@ -14,7 +14,7 @@ module.exports = {
       greenBorder: '#1CB698',
       veryDarkBlue: 'hsl(229, 31%, 21%)',
       yellowSpan: '#ceaa0d',
-      coverColor: '#1E5F74',
+      coverColor: '#2b6a7ef7',
       buttonsColor: '#133B5C',
       buttonColor: '#1D2D50',
       greenColor: '#03C988',
