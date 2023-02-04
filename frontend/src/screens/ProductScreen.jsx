@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import products from '../products'
 import { Rating } from '../components/Rating'
+import axios from 'axios'
 
 export const ProductScreen = () => {
-    const params = useParams()
-    const product = products.find((p) => p._id === params.id )
+    const { id } = useParams()
+ 
+    const [product, setProduct] = useState({})
+    
+    useEffect(() => {
+        const fetchProduct = async () => {
+        const { data } = await axios.get(`http://127.0.0.1:5000/api/products/${id}`)
+    
+        setProduct(data)
+        }
+    
+        fetchProduct()
+    }, [])
 
   return (
     <>
@@ -51,7 +62,7 @@ export const ProductScreen = () => {
                         </div>
 
                         {/* <!-- Button Group --> */}
-                        <div class="group">
+                        <div className="group">
                         { product.countInStock === 0
                             ? 
                             <button className="w-full transition-all duration-150 bg-grayColor uppercase font-mono text-secondaryColor rounded-md">
