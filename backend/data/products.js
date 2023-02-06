@@ -5,8 +5,7 @@ const products = [
     image: '../images/botas.png',
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-    brand: 'Apple',
-    category: 'Electronics',
+    category: 'botas',
     price: 89.99,
     offert: 79.99,
     countInStock: 10,
@@ -19,8 +18,7 @@ const products = [
     image: '../images/tenis.png',
     description:
       'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
-    brand: 'Apple',
-    category: 'Electronics',
+    category: 'zapatos',
     price: 599.99,
     offert: 459.99,
     countInStock: 7,
@@ -33,8 +31,7 @@ const products = [
     image: '../images/zapatos.png',
     description:
       'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
-    brand: 'Cannon',
-    category: 'Electronics',
+    category: 'zapatos',
     price: 929.99,
     offert: 829.99,
     countInStock: 5,
@@ -47,8 +44,7 @@ const products = [
     image: '../images/funda.png',
     description:
       'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
-    brand: 'Sony',
-    category: 'Electronics',
+    category: 'fundas',
     price: 399.99,
     offert: 379.99,
     countInStock: 11,
@@ -61,8 +57,7 @@ const products = [
     image: '../images/variosLlaveros.png',
     description:
       'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
-    brand: 'Logitech',
-    category: 'Electronics',
+    category: 'llaveros',
     price: 49.99,
     offert: 30.00,
     countInStock: 7,
@@ -75,8 +70,7 @@ const products = [
     image: '../images/fundaRoja.png',
     description:
       'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
-    brand: 'Amazon',
-    category: 'Electronics',
+    category: 'fundas',
     price: 29.99,
     offert: 25.50,
     countInStock: 10,
